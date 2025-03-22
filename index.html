@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.css"
+    />
+    <!--LINK ICONS-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <!--TAILWIND CSS-->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body id="home-body" class="bg-white text-black">
+    <!--====HOME PAGE====-->
+    <header class="p-4 w-full bg-red-100 header">
+      <nav class="flex items-center justify-between">
+        <a
+          href="index.html"
+          class="text-red-800 font-bold text-2xl font-mono border p-2 rounded-full"
+          >TREASURE A</a
+        >
+
+        <!--DARK AND TOGGLE WRAP-->
+        <div class="flex items-center">
+          <div class="nav-menu bg-red-100 w-90 -right-0" id="nav-menu">
+            <ul class="nav-list text-center flex gap-8 flex-col relative">
+              <li>
+                <div>
+                  <details class="open:bg-red-100 p-1 rounded-md">
+                    <summary
+                      class="text-sm text-black dark:text-black font-semibold"
+                    >
+                      <a href="#about" class="nav-link relative"> About</a>
+                    </summary>
+                    <div class="mt-1 text-sm text-black">
+                      <a href="#experience" class="nav-link relative"
+                        >Experience</a
+                      >
+                    </div>
+                  </details>
+                </div>
+              </li>
+
+              <li>
+                <div>
+                  <details class="open:bg-red-100 p-1 rounded-md">
+                    <summary
+                      class="text-sm text-black dark:text-black font-semibold"
+                    >
+                      <a href="#education" class="nav-link relative"
+                        >Education</a
+                      >
+                    </summary>
+                    <div class="mt-1 text-sm text-black">
+                      <a href="#skills" class="nav-link relative">Skills</a>
+                    </div>
+                  </details>
+                </div>
+              </li>
+
+              <li>
+                <div>
+                  <details class="open:bg-red-100 p-1 rounded-md">
+                    <summary
+                      class="text-sm text-black dark:text-black font-semibold"
+                    >
+                      <a href="#project" class="nav-link relative">Projects</a>
+                    </summary>
+                    <div class="mt-1 text-sm text-black">
+                      <a href="#contact" class="nav-link relative">Contact</a>
+                    </div>
+                  </details>
+                </div>
+              </li>
+            </ul>
+
+            <!--CLOSE BUTTON-->
+            <div
+              class="absolute top-1 nav-close flex cursor-pointer"
+              id="nav-close"
+            >
+              <p>X</p>
+            </div>
+          </div>
+
+          <!--TOOGLE BUTTON-->
+          <div
+            id="nav-toogle"
+            class="menu-wrap mr-2 border p-1.5 rounded-md cursor-pointer flex"
+          >
+            <div class="flex flex-col gap-1">
+              <div class="bg-black w-7 h-0.5"></div>
+              <div class="bg-black w-7 h-0.5"></div>
+              <div class="bg-black w-7 h-0.5"></div>
+            </div>
+          </div>
+
+          <!--DARK AND LIGHT THEME BUTTON-->
+          <div
+            id="theme-toggle"
+            class="text-black rounded-full p-2 flex items-center cursor-pointer"
+          >
+            <span class="material-symbols-outlined" id="dark-icon"
+              >dark_mode</span
+            >
+            <span class="material-symbols-outlined hidden" id="light-icon"
+              >light_mode</span
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="slider relative w-full section">
+        <div
+          class="slide active absolute top-0 left-0 w-full h-100"
+          style="background-image: url('img/people.jpg')"
+        >
+          <div
+            class="overlay font-bold absolute inset-0 mt-20 flex justify-center"
+          >
+            <div class="text text-center">
+              <p class="mb-3 mt-3">HELLO, I'M A</p>
+              <div
+                class="size2 text-red-700 mb-3 text-3xl flex flex-row justify-center"
+              >
+                A
+                <span class="span">GRAPHICS DESIGNER</span>
+              </div>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa
+                nostrum quaerat consequuntur placeat nemo adipisci beatae
+              </p>
+              <p class="mt-2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+              <button class="border border-red-500 mt-3 p-2 rounded-md">
+                Download CV
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="slide absolute top-0 left-0 w-full h-100"
+          style="background-image: url('img/phone 3.avif')"
+        >
+          <div
+            class="overlay font-bold absolute inset-0 flex mt-20 justify-center"
+          >
+            <div class="text text-center">
+              <p class="mb-3 mt-3">HELLO, I'M A</p>
+              <div
+                class="size2 text-red-700 mb-3 text-3xl flex flex-row justify-center"
+              >
+                A
+                <span class="span">FRONTEND DEVELOPER</span>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+                quas incidunt iste harum eum exercitationem consequatur numquam
+              </p>
+              <p class="mt-2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+              <button class="border border-red-500 mt-3 p-2 rounded-md">
+                Download CV
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="slide absolute top-0 left-0 w-full h-100"
+          style="background-image: url('img/phone 4.avif')"
+        >
+          <div
+            class="overlay font-bold absolute inset-0 flex mt-20 justify-center"
+          >
+            <div class="text text-center">
+              <p class="mb-3 mt-3">HELLO, I'M A</p>
+              <div
+                class="size2 text-red-700 mb-3 text-3xl flex flex-row justify-center"
+              >
+                A
+                <span class="span">FLYER/LOGO DESIGNER</span>
+              </div>
+              <p class="mt-2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Non,
+                dolore asperiores! Quidem alias necessitatibus aperiam quod
+              </p>
+              <p class="mt-2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+
+              <button class="border border-red-500 mt-3 p-2 rounded-md">
+                Download CV
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <button
+          class="prev absolute top-35 bg-red-100 hover:bg-red-400"
+          onclick="prevSlide()"
+        >
+          <span class="material-symbols-outlined"> chevron_left </span>
+        </button>
+
+        <button
+          class="next absolute top-35 bg-red-100 hover:bg-red-400"
+          onclick="nextSlide()"
+        >
+          <span class="material-symbols-outlined"> chevron_right </span>
+        </button>
+      </section>
+
+      <section
+        id="about"
+        class="flex flex-col sm:flex-row justify-between gap-8 p-10"
+      >
+        <div>
+          <img class="border" src="img/NewImage.png" alt="me" />
+        </div>
+
+        <div class="">
+          <h2 class="mb-4 text-3xl text-red-700 font-bold">ABOUT ME</h2>
+          <p class="mb-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
+            voluptates reprehenderit quisquam quis illo quae vero consequatur
+            unde totam corrupti ab quibusdam eaque debitis, natus hic dolorum
+            qui? Explicabo, eos! Non, tempore. Laudantium pariatur repellat.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum
+            saepe repellat repudiandae facere molestiae! Pariatur quis voluptate
+            quisquam! Ullam fugiat voluptas ipsa tempore eius velit nesciunt
+            deserunt minus recusandae tempora.
+          </p>
+          <div class="mt-10">
+            <button
+              class="pl-8 pr-8 p-2 rounded-full mb-3 mr-5 bg-red-500 duration-300 hover:bg-red-200"
+            >
+              <a href="">Download Cv</a>
+            </button>
+            <button
+              class="border hover:bg-red-100 duration-300 hover:border-none pl-8 pr-8 p-2 rounded-full"
+            >
+              <a
+                href="https://wa.me/+2349135206161?text=Hi%20My%20Name%20is%20"
+                target="_blank"
+                >Contact Me</a
+              >
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="mt-10 section">
+        <h2 class="text-3xl text-center font-bold">EXPERIENCE</h2>
+        <div class="w-30 h-1 bg-purple-600 m-auto"></div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-3">
+          <div
+            class="m-5 shadow-md hover:-translate-y-2 duration-300 ease-in p-3 rounded-md"
+          >
+            <span class="material-symbols-outlined text-purple-800">
+              settings
+            </span>
+            <h3 class="text-xl font-bold">Creative Design</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
+              voluptas eveniet magnam incidunt quasi ad dignissimos consequatur
+              voluptate. Fugit, quam sed accusantium qui omnis asperiores.
+            </p>
+          </div>
+
+          <div
+            class="m-5 hover:-translate-y-2 duration-300 ease-in shadow-md p-3 rounded-md"
+          >
+            <span class="material-symbols-outlined text-purple-800">
+              html
+            </span>
+            <h3 class="text-xl font-bold">Clean Code</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
+              voluptas eveniet magnam incidunt quasi ad dignissimos consequatur
+              voluptate. Fugit, quam sed accusantium qui omnis asperiores.
+            </p>
+          </div>
+
+          <div
+            class="m-5 hover:-translate-y-2 duration-300 ease-in shadow-md p-3 rounded-md"
+          >
+            <span class="material-symbols-outlined text-purple-800">
+              token
+            </span>
+            <h3 class="text-xl font-bold">Responsive Websites</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
+              voluptas eveniet magnam incidunt quasi ad dignissimos consequatur
+              voluptate. Fugit, quam sed accusantium qui omnis asperiores.
+            </p>
+          </div>
+
+          <div
+            class="m-5 hover:-translate-y-2 duration-300 ease-in shadow-md p-3 rounded-md"
+          >
+            <span class="material-symbols-outlined text-purple-800">
+              data_thresholding
+            </span>
+            <h3 class="text-xl font-bold">Canva Designs</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
+              voluptas eveniet magnam incidunt quasi ad dignissimos consequatur
+              voluptate. Fugit, quam sed accusantium qui omnis asperiores.
+            </p>
+          </div>
+
+          <div
+            class="m-5 hover:-translate-y-2 duration-300 ease-in shadow-md p-3 rounded-md"
+          >
+            <span class="material-symbols-outlined text-purple-800">
+              captive_portal
+            </span>
+            <h3 class="text-xl font-bold">Font Icon</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
+              voluptas eveniet magnam incidunt quasi ad dignissimos consequatur
+              voluptate. Fugit, quam sed accusantium qui omnis asperiores.
+            </p>
+          </div>
+
+          <div
+            class="m-5 hover:-translate-y-2 duration-300 ease-in shadow-md p-3 rounded-md"
+          >
+            <span class="material-symbols-outlined text-purple-800">
+              rocket_launch
+            </span>
+            <h3 class="text-xl font-bold">Beautiful Design</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
+              voluptas eveniet magnam incidunt quasi ad dignissimos consequatur
+              voluptate. Fugit, quam sed accusantium qui omnis asperiores.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="education" class="mt-10 section">
+        <h2 class="text-3xl text-center font-bold">Education</h2>
+        <div class="w-30 h-1 bg-red-700 m-auto"></div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2">
+          <div
+            class="m-5 ease-in duration-300 hover:-translate-y-3 shadow p-3 rounded-md"
+          >
+            <h3 class="text-xl font-bold text-center mb-4">
+              PRIMARY EDUCATION
+            </h3>
+            <div class="flex gap-4 mb-4">
+              <div>
+                <img
+                  class="w-10 h-10 rounded-full"
+                  src="/img/NewImage.png"
+                  alt="img"
+                />
+              </div>
+
+              <div>
+                <p>
+                  <strong class="text-purple-800"
+                    >United Nursery Primary School</strong
+                  >
+                </p>
+                <p><strong>Date:</strong> 2007 - 2014</p>
+              </div>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
+              voluptas eveniet magnam incidunt quasi ad dignissimos consequatur
+              voluptate. Fugit, quam sed accusantium qui omnis asperiores.
+            </p>
+          </div>
+
+          <div
+            class="m-5 ease-in duration-300 hover:-translate-y-3 shadow p-3 rounded-md"
+          >
+            <h3 class="text-xl font-bold text-center mb-4">JUNIOR EDUCATION</h3>
+            <div class="flex gap-4 mb-4">
+              <div>
+                <img
+                  class="w-10 h-10 rounded-full"
+                  src="/img/NewImage.png"
+                  alt="img"
+                />
+              </div>
+
+              <div>
+                <p>
+                  <strong class="text-purple-800"
+                    >Peak Genius Comprehensive School</strong
+                  >
+                </p>
+                <p><strong>Date:</strong> 2014 - 2016</p>
+              </div>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
+              voluptas eveniet magnam incidunt quasi ad dignissimos consequatur
+              voluptate. Fugit, quam sed accusantium qui omnis asperiores.
+            </p>
+          </div>
+
+          <div
+            class="m-5 ease-in duration-300 hover:-translate-y-3 shadow p-3 rounded-md"
+          >
+            <h3 class="text-xl font-bold text-center mb-4">
+              SECONDARY EDUCATION
+            </h3>
+            <div class="flex gap-4 mb-4">
+              <div>
+                <img
+                  class="w-10 h-10 rounded-full"
+                  src="/img/NewImage.png"
+                  alt="img"
+                />
+              </div>
+
+              <div>
+                <p>
+                  <strong class="text-purple-800"
+                    >Government Secondary School Bwari</strong
+                  >
+                </p>
+                <p><strong>Date:</strong> 2017 - 2019</p>
+              </div>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
+              voluptas eveniet magnam incidunt quasi ad dignissimos consequatur
+              voluptate. Fugit, quam sed accusantium qui omnis asperiores.
+            </p>
+          </div>
+
+          <div
+            class="m-5 ease-in duration-300 hover:-translate-y-3 shadow p-3 rounded-md"
+          >
+            <h3 class="text-xl font-bold text-center mb-4">BACHELOR DEGREE</h3>
+            <div class="flex gap-4 mb-4">
+              <div>
+                <img
+                  class="w-10 h-10 rounded-full"
+                  src="/img/NewImage.png"
+                  alt="img"
+                />
+              </div>
+
+              <div>
+                <p>
+                  <strong class="text-purple-800"
+                    >Obafemi Awolowo University</strong
+                  >
+                </p>
+                <p><strong>Date:</strong> 2019 - Now</p>
+              </div>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
+              voluptas eveniet magnam incidunt quasi ad dignissimos consequatur
+              voluptate. Fugit, quam sed accusantium qui omnis asperiores.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="mt-10 section">
+        <h2 class="text-3xl text-center font-bold">SKILLS</h2>
+        <div class="w-20 h-1 bg-pink-600 m-auto"></div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-3">
+          <div
+            class="m-5 shadow-md ease-in duration-300 hover:-translate-y-3 p-3 rounded-md flex items-center gap-4"
+          >
+            <i
+              class="ri-github-fill text-2xl text-purple-800 bg-red-100 p-1 rounded-full"
+            ></i>
+
+            <h3 class="text-xl font-bold">Github</h3>
+          </div>
+
+          <div
+            class="m-5 ease-in duration-300 hover:-translate-y-3 shadow-md p-3 rounded-md flex items-center gap-4"
+          >
+            <i
+              class="ri-css3-line text-2xl text-purple-800 bg-red-100 p-1 rounded-full"
+            ></i>
+
+            <h3 class="text-xl font-bold">Tailwind CSS</h3>
+          </div>
+
+          <div
+            class="m-5 ease-in duration-300 hover:-translate-y-3 shadow-md p-3 rounded-md flex items-center gap-4"
+          >
+            <i
+              class="ri-javascript-line text-2xl text-purple-800 bg-red-100 p-1 rounded-full"
+            ></i>
+
+            <h3 class="text-xl font-bold">JavaScript</h3>
+          </div>
+
+          <div
+            class="m-5 ease-in duration-300 hover:-translate-y-3 shadow-md p-3 rounded-md flex items-center gap-4"
+          >
+            <i
+              class="ri-html5-line text-2xl text-purple-800 bg-red-100 p-1 rounded-full"
+            ></i>
+
+            <h3 class="text-xl font-bold">HTML5</h3>
+          </div>
+
+          <div
+            class="m-5 ease-in duration-300 hover:-translate-y-3 shadow-md p-3 rounded-md flex items-center gap-4"
+          >
+            <i
+              class="ri-css3-line text-2xl text-purple-800 bg-red-100 p-1 rounded-full"
+            ></i>
+
+            <h3 class="text-xl font-bold">CSS</h3>
+          </div>
+
+          <div
+            class="m-5 ease-in duration-300 hover:-translate-y-3 shadow-md p-3 rounded-md flex items-center gap-4"
+          >
+            <i
+              class="ri-github-line text-purple-800 text-2xl bg-red-100 p-1 rounded-full"
+            ></i>
+
+            <h3 class="text-xl font-bold">Git</h3>
+          </div>
+
+          <div
+            class="m-5 ease-in duration-300 hover:-translate-y-3 shadow-md p-3 rounded-md flex items-center gap-4"
+          >
+            <i
+              class="ri-github-line text-2xl text-purple-800 bg-red-100 p-1 rounded-full"
+            ></i>
+
+            <h3 class="text-xl font-bold">Canva</h3>
+          </div>
+
+          <div
+            class="m-5 ease-in duration-300 hover:-translate-y-3 shadow-md p-3 rounded-md flex items-center gap-4"
+          >
+            <i
+              class="ri-html5-line text-2xl text-purple-800 bg-red-100 p-1 rounded-full"
+            ></i>
+
+            <h3 class="text-xl font-bold">Adobe Illustrator</h3>
+          </div>
+
+          <div
+            class="m-5 ease-in duration-300 hover:-translate-y-3 shadow-md p-3 rounded-md flex items-center gap-4"
+          >
+            <i
+              class="ri-microsoft-line text-2xl text-purple-800 bg-red-100 p-1 rounded-full"
+            ></i>
+
+            <h3 class="text-xl font-bold">Microsoft</h3>
+          </div>
+        </div>
+      </section>
+
+      <section id="project" class="mt-10 section">
+        <h2 class="text-3xl text-center font-bold">Project</h2>
+        <div class="w-30 h-1 bg-red-700 m-auto"></div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2">
+          <div
+            class="m-5 ease-in duration-300 hover:-translate-y-4 shadow-md rounded-md"
+          >
+            <img
+              class="w-full h-50 object-cover"
+              src="img/mini.png"
+              alt="first"
+            />
+            <div>
+              <div>
+                <details class="open:bg-red-100 p-1 pb-5">
+                  <summary class="text-xl text-black dark:text-black font-bold">
+                    <p>Mini Market</p>
+                  </summary>
+                  <div class="mt-1 text-sm text-black">
+                    <p>
+                      Shop with trust and trust at the M and T's Mini Appliance
+                      Market
+                    </p>
+                    <button
+                      class="p-2 mt-3 font-mono rounded-md border bg-purple-600"
+                    >
+                      <a
+                        href="https://gregarious-cajeta-8eda4b.netlify.app/"
+                        target="_blank"
+                        >Live Demo</a
+                      >
+                    </button>
+                  </div>
+                </details>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="m-5 ease-in duration-300 hover:-translate-y-4 shadow-md rounded-md"
+          >
+            <img
+              class="w-full h-50 object-cover"
+              src="img/rock.png"
+              alt="first"
+            />
+            <div>
+              <div>
+                <details class="open:bg-red-100 p-1 pb-5">
+                  <summary class="text-xl text-black dark:text-black font-bold">
+                    <p>Rock Paper Scissors Game</p>
+                  </summary>
+                  <div class="mt-1 text-sm text-black">
+                    <p>
+                      Have some fun with T's Rock Paper Scissor hard and easy
+                      level where you play against the computer
+                    </p>
+                    <button
+                      class="p-2 mt-3 font-mono rounded-md border bg-purple-600"
+                    >
+                      <a
+                        href="https://startling-melomakarona-48c920.netlify.app/"
+                        target="_blank"
+                        >Live Demo</a
+                      >
+                    </button>
+                  </div>
+                </details>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="m-5 ease-in duration-300 hover:-translate-y-4 shadow-md rounded-md"
+          >
+            <img
+              class="w-full h-50 object-cover"
+              src="img/form.png"
+              alt="first"
+            />
+            <div>
+              <div>
+                <details class="open:bg-red-100 p-1 pb-5">
+                  <summary class="text-xl text-black dark:text-black font-bold">
+                    <p>MultiForm website</p>
+                  </summary>
+                  <div class="mt-1 text-sm text-black">
+                    <p>
+                      Fill out you information in this site and get your gaming
+                      stages
+                    </p>
+                    <button
+                      class="p-2 mt-3 font-mono rounded-md border bg-purple-600"
+                    >
+                      <a
+                        href="https://famous-dieffenbachia-91ceaf.netlify.app/#"
+                        target="_blank"
+                        >Live Demo</a
+                      >
+                    </button>
+                  </div>
+                </details>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="m-5 ease-in duration-300 hover:-translate-y-4 shadow-md rounded-md"
+          >
+            <img
+              class="w-full h-50 object-cover"
+              src="img/quiz.png"
+              alt="first"
+            />
+            <div>
+              <div>
+                <details class="open:bg-red-100 p-1 pb-5">
+                  <summary class="text-xl text-black dark:text-black font-bold">
+                    <p>JS and C# QUiz App</p>
+                  </summary>
+                  <div class="mt-1 text-sm text-black">
+                    <p>
+                      Test your knowledge in JavaScript and C# by answering this
+                      50 questions
+                    </p>
+                    <button
+                      class="p-2 mt-3 font-mono rounded-md border bg-purple-600"
+                    >
+                      <a
+                        href="https://harmonious-crisp-96d27b.netlify.app/"
+                        target="_blank"
+                        >Live Demo</a
+                      >
+                    </button>
+                  </div>
+                </details>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="mt-10 mb-10 section text-black">
+        <div
+          class="p-8 rounded-lg shadow-md w-full sm:w-200 sm:m-auto bg-white"
+        >
+          <h2 class="text-3xl text-center font-bold">Contact</h2>
+          <div class="w-30 h-1 bg-purple-700 m-auto"></div>
+          <form id="contactForm">
+            <div class="mb-4">
+              <label for="name" class="block text-md font-medium text-gray-700"
+                >Name:</label
+              >
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring focus:ring-blue-500 focus:border-blue-500 p-2"
+                placeholder="Your Name"
+              />
+            </div>
+            <div class="mb-4">
+              <label for="email" class="block text-md font-medium text-gray-700"
+                >Email:</label
+              >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring focus:ring-blue-500 focus:border-blue-500 p-2"
+                placeholder="Your Email"
+              />
+            </div>
+            <div class="mb-4">
+              <label
+                for="message"
+                class="block text-md font-medium text-gray-700"
+                >Message:</label
+              >
+              <textarea
+                id="message"
+                name="message"
+                required
+                class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring focus:ring-blue-500 focus:border-blue-500 p-2"
+                rows="4"
+                placeholder="Your Message"
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="w-full bg-purple-700 text-white font-bold py-2 rounded hover:bg-purple-900"
+            >
+              Send Message
+            </button>
+          </form>
+          <div
+            id="responseMessage"
+            class="mt-4 text-center text-green-500 hidden"
+          ></div>
+        </div>
+      </section>
+    </main>
+
+    <!--======== FOOTER========-->
+    <footer class="bg-gray-900 p-10 text-white">
+      <div>
+        <div class="grid grid-cols-1 text-center sm:grid-cols-3">
+          <div class="flex justify-center sm:flex-col gap-8 mb-4">
+            <a
+              href="index.html"
+              class="text-red-400 font-bold mb-5 text-3xl font-mono self-center border p-2 rounded-full"
+              >TREASURE A</a
+            >
+
+            <div class="footer-social">
+              <a
+                href="https://www.faceook.com/"
+                target="_blank"
+                class="mr-4 hover:text-blue-600 duration-300"
+              >
+                <i class="ri-facebook-circle-fill text-2xl"></i>
+              </a>
+
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                class="mr-4 hover:text-pink-600 duration-300"
+              >
+                <i class="ri-instagram-fill text-2xl"></i>
+              </a>
+
+              <a
+                href="https://twitter.com/"
+                target="_blank"
+                class="mr-4 hover:text-purple-600 duration-300"
+              >
+                <i class="ri-twitter-x-fill text-xl"></i>
+              </a>
+
+              <a
+                href="https://twitter.com/"
+                target="_blank"
+                class="hover:text-black duration-300"
+              >
+                <i class="ri-github-fill text-2xl"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="mb-5">
+            <ul class="nav-list">
+              <li class="mb-3">
+                <a href="#about" class="nav-link relative mb-2"> About</a>
+              </li>
+
+              <li class="mb-3">
+                <a href="#experience" class="nav-link relative">Experience</a>
+              </li>
+
+              <li class="mb-3">
+                <a href="#education" class="nav-link relative mb-2">
+                  Education</a
+                >
+              </li>
+
+              <li class="mb-3">
+                <a href="#skills" class="nav-link relative mb-2">Skills</a>
+              </li>
+
+              <li class="mb-3">
+                <a href="#project" class="nav-link relative mb-2"> Project</a>
+              </li>
+
+              <li>
+                <a href="#contact" class="nav-link relative">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-2xl mb-4 font-bold">Contact Me</h3>
+            <p class="mb-3">
+              Email:
+              <a href="mailto:treasureamuka@gmail.com" class="text-red-400"
+                >treasureamuka@gmail.com</a
+              >
+            </p>
+            <p>
+              Phone:
+              <a href="tel:+2349135206161" class="text-red-400"
+                >+234-913-520-6161</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#top" class="go-top active" data-go-top
+      ><ion-icon name="chevron-up-outline"></ion-icon
+    ></a>
+    <script src="script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script>
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          const name = document.getElementById("name").value;
+          const email = document.getElementById("email").value;
+          const message = document.getElementById("message").value;
+          console.log("Name:", name);
+          console.log("Email:", email);
+          console.log("Message:", message);
+
+          // Show a success message
+          const responseMessage = document.getElementById("responseMessage");
+          responseMessage.textContent = "Your message has been sent!";
+          responseMessage.classList.remove("hidden");
+
+          // Clear the form
+          document.getElementById("contactForm").reset();
+        });
+    </script>
+  </body>
+</html>
